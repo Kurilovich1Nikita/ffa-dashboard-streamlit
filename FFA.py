@@ -9,11 +9,11 @@ st.set_page_config(page_title="FFA", page_icon="ffa_icon_jrQ_icon.png", layout="
 st.title("FFA Search Engine")
 
 # Connect to the Google Sheet
-#sheet_id = "1nctiWcQFaB5UlIs6z8d1O6ZgMHFDMAoo3twVxYnBUws"
-#sheet_name = "charlas"
-#url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}"
-#df = pd.read_csv(url, dtype=str).fillna("")
-df = pd.read_excel('SearchengineFFA1.xlsx')
+sheet_id = "1nctiWcQFaB5UlIs6z8d1O6ZgMHFDMAoo3twVxYnBUws"
+sheet_name = "Test1"
+url = f"https://docs.google.com/spreadsheets/d/1fnb7B9BrkQNwg8DI_Tjx-ITWogMxXek5HFGgD5DR0fo/gviz/tq?tqx=out:csv&sheet=Test1"
+df = pd.read_csv(url, dtype=str).fillna("")
+# df = pd.read_excel('SearchengineFFA1.xlsx')
 
 # Show the dataframe (we'll delete this later)
 st.write(df)
